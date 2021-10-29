@@ -1,8 +1,8 @@
 # AR-Shooter
 
-Authors: Barat Narcis
-         Chira Mihaela
-         Martonca Daniel
+Authors: Barat Narcis,
+         Chira Mihaela,
+         Martonca Daniel,
          Druta Georgiana
          
          
