@@ -13,3 +13,5 @@ Authors: Barat Narcis,
 ## User Journey
 
 [Click here to see the document](https://docs.google.com/document/d/1zdyeg-StRPVLImDI4eAx6TTi3J0P0TERRTIeq18LZfs/edit)
+
+![UserJourneyARShooter drawio](https://user-images.githubusercontent.com/75793612/140493057-13f96d84-374d-4168-a307-ae3286e38bc3.png)
