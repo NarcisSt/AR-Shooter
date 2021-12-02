@@ -1,12 +1,13 @@
 {
   "dependencies": {
     "com.lootlocker.lootlockersdk": {
-      "version": "file:C:/Users/Mihaela/Desktop/unity-sdk-master/unity-sdk-master",
+      "version": "https://github.com/LootLocker/unity-sdk.git",
       "depth": 0,
-      "source": "local",
+      "source": "git",
       "dependencies": {
         "com.unity.nuget.newtonsoft-json": "2.0.0"
-      }
+      },
+      "hash": "b99b4b9c3236c86d9123afede677eb43db19ea37"
     },
     "com.unity.collab-proxy": {
       "version": "1.13.5",
