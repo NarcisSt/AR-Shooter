@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class MenuController : MonoBehaviour
@@ -12,5 +10,16 @@ public class MenuController : MonoBehaviour
     public void Scoreboard()
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex + 2);
+    }
+    
+    public void HowToPlay()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex + 3);
+    }
+
+    public void ExitGame()
+    {
+        // Application.Quit(); for the actual game
+        UnityEditor.EditorApplication.isPlaying = false; // for tests
     }
 }

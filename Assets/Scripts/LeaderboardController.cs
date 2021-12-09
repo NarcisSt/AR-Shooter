@@ -15,6 +15,7 @@ public class LeaderboardController : MonoBehaviour
         {
             if(response.success){
                 Debug.Log("Success");
+                ShowScores();
             }
             else
             {
