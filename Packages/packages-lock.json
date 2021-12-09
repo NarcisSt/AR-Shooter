@@ -9,6 +9,15 @@
       },
       "hash": "b99b4b9c3236c86d9123afede677eb43db19ea37"
     },
+    "com.ptc.vuforia.engine": {
+      "version": "git+https://git-packages.developer.vuforia.com#9.8.8",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.unity.ugui": "1.0.0"
+      },
+      "hash": "2df2f4d646d606f25c85191edfcd241f7d4f8264"
+    },
     "com.unity.collab-proxy": {
       "version": "1.13.5",
       "depth": 0,
