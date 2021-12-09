@@ -15,6 +15,7 @@ public class LeaderboardController : MonoBehaviour
         {
             if(response.success){
                 Debug.Log("Success");
+                ShowScores();
             }
             else
             {
@@ -33,7 +34,7 @@ public class LeaderboardController : MonoBehaviour
 
                 for (int i = 0; i < scores.Length; i++)
                 {
-                    Entries[i].text = (scores[i].rank + ".   " + scores[i].score);    
+                    Entries[i].text = (scores[i].rank + ".   " + scores[i].score);
                 }
 
                 if(scores.Length < MaxScores)
