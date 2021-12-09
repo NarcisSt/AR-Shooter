@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEditor;
 
 public class MenuController : MonoBehaviour
 {
@@ -19,7 +20,8 @@ public class MenuController : MonoBehaviour
 
     public void ExitGame()
     {
-        // Application.Quit(); for the actual game
-        UnityEditor.EditorApplication.isPlaying = false; // for tests
+        Application.Quit(); /*for the actual game*/
+
+       //UnityEditor.EditorApplication.isPlaying = false; // for tests
     }
 }
