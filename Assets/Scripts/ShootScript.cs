@@ -16,7 +16,19 @@ public class ShootScript : MonoBehaviour,IUpdateSelectedHandler,IPointerDownHand
 
     public GameObject endOfGun;
 
+    public GameObject respawnPrefab;
+
     public bool isShooting = false;
+
+    private void Update()
+    {
+        characters = GameObject.FindGameObjectsWithTag("Enemy");
+        foreach (GameObject respawn in characters)
+        {
+            Instantiate(respawnPrefab, respawn.transform.position, respawn.transform.rotation);
+        }
+    }
+
     private void ActivateShoot()
     {
         if(isShooting)
