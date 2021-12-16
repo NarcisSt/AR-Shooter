@@ -474,8 +474,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1043318675}
-        m_TargetAssemblyTypeName: Start, Assembly-CSharp
-        m_MethodName: PlayGame
+        m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
+        m_MethodName: EnterRoom1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1332,8 +1332,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1043318675}
-        m_TargetAssemblyTypeName: Start, Assembly-CSharp
-        m_MethodName: PlayGame
+        m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
+        m_MethodName: EnterRoom2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1464,8 +1464,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1043318675}
-        m_TargetAssemblyTypeName: Start, Assembly-CSharp
-        m_MethodName: PlayGame
+        m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
+        m_MethodName: EnterRoom3
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

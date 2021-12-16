@@ -23,10 +23,6 @@ public class ShootScript : MonoBehaviour,IUpdateSelectedHandler,IPointerDownHand
     private void Update()
     {
         characters = GameObject.FindGameObjectsWithTag("Enemy");
-        foreach (GameObject respawn in characters)
-        {
-            Instantiate(respawnPrefab, respawn.transform.position, respawn.transform.rotation);
-        }
     }
 
     private void ActivateShoot()
