@@ -7,8 +7,12 @@ using UnityEngine.SceneManagement;
 public class GameOverScreen : MonoBehaviour
 {
     public Text pointsText;
-
-    public void Setup(int score)
+    private int score;
+    public void Start()
+    {
+        score = ShootScript.points;
+    }
+    public void Setup()
     {
         gameObject.SetActive(true);
         pointsText.text = score.ToString() + "points";
@@ -16,11 +20,11 @@ public class GameOverScreen : MonoBehaviour
 
     public void RestartButton()
     {
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene(0);
     }
 
     public void ExitButton()
     {
-        SceneManager.LoadScene("Menu");
+        Application.Quit();
     }
 }

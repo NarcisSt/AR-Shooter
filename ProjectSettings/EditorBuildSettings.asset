@@ -15,11 +15,17 @@ EditorBuildSettings:
     path: Assets/Scenes/Room2.unity
     guid: e5c9b804fe239a843b8d42f52915261d
   - enabled: 1
+    path: Assets/Scenes/Room3.unity
+    guid: eb17ccd0de72de74b9fb8b6055e3ac69
+  - enabled: 1
     path: Assets/Scenes/Leaderboard.unity
     guid: 33fdfafc167f7474798ca53f36a112bf
   - enabled: 1
     path: Assets/Scenes/HowToPlay.unity
     guid: ae76013ac00660f4c904ff840a56227a
+  - enabled: 1
+    path: Assets/Scenes/Game Over.unity
+    guid: 8a3ceafd96ece8245a0344c17085b9fb
   - enabled: 1
     path: Assets/Scenes/TestScene.unity
     guid: a95f73e85b0324c43b02a86da574c1af

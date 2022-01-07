@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class ShootScript : MonoBehaviour,IUpdateSelectedHandler,IPointerDownHandler,IPointerUpHandler
 {
@@ -20,9 +21,21 @@ public class ShootScript : MonoBehaviour,IUpdateSelectedHandler,IPointerDownHand
 
     public bool isShooting = false;
 
-    private void Update()
+    public static int points = 0;
+
+    public int maxPoints = 0;
+
+    public Text score;
+
+    private void Start()
     {
         characters = GameObject.FindGameObjectsWithTag("Enemy");
+        maxPoints = characters.Length * 10;
+    }
+
+    private void Update()
+    {
+
     }
 
     private void ActivateShoot()
@@ -37,8 +50,12 @@ public class ShootScript : MonoBehaviour,IUpdateSelectedHandler,IPointerDownHand
                 var obj = hit.transform.gameObject;
                 if (obj.CompareTag("Enemy"))
                 {
-                    Destroy(hit.transform.gameObject);
-                    // var an = obj.GetComponent<Animation>();
+                 //   Destroy(hit.transform.gameObject);
+                    points += 10;
+                    score.text = "Score: " + points;
+                    Debug.Log(points);
+                    var an = obj.GetComponent<Animator>();
+                    an.SetBool("dead", true);
                     // an.Play("Death");
                 }
             }
@@ -58,7 +75,7 @@ public class ShootScript : MonoBehaviour,IUpdateSelectedHandler,IPointerDownHand
 
     void SpawnMuzzle()
     {
-        endOfGun.transform.localPosition = new Vector3(0, 0.135f, 0.75f);
+        endOfGun.transform.localPosition = new Vector3(0, 0.235f, 0.75f);
         var smokeObj=Instantiate(smoke,
             endOfGun.transform.position,
             endOfGun.transform.rotation);
@@ -79,4 +96,10 @@ public class ShootScript : MonoBehaviour,IUpdateSelectedHandler,IPointerDownHand
         if(isShooting)
             Shoot();
     }
+
+    public void ShowWinScreen()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene(6);
+    }
+
 }
